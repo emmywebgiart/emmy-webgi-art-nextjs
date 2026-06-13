@@ -112,17 +112,20 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lustria&display=swap');
 
 :root {
-  --colorpalette1: #3d4127;
+  --colorpalette1: #3E2C23;
   --colorpalette2: #437057;
-  --colorpalette3: #778873;
-  --colorpalette4: #D4DE95;
+  --colorpalette3: #EBE5C2;
+  --colorpalette4: #41644A;
+  --colorpalette5: #FAF3E1;
   --colorwhite: #fff;
+  --colorblack: #000;
   --colorwhitergb: 255 255 255;
   --colorpallete2rgb: 67 112 87;
   --colorpallete3rgb: 119 136 115;
 }
 
 body {
+    background: var(--colorpalette5);
   font-family: "Lustria", serif;
   color: var(--colorpalette2);
 }
@@ -336,7 +339,7 @@ p {
 
 .section_hero {
    width: 100%;
-   height: 100vh;
+   height: 100dvh;
    background-size: cover;
    background-position: center;
 }
@@ -367,7 +370,7 @@ p {
 }
 
 .section_hero:before {
-  background-image: linear-gradient(to bottom, var(--colorpalette1), transparent);
+  background-image: linear-gradient(to bottom, var(--colorwhite), transparent 50%);
 }
 
 .section_album:before {
@@ -376,11 +379,11 @@ p {
 }
 
 .section_hero:after, .section_album:after {
-  background-image: linear-gradient(to top, var(--colorwhite) 1%, transparent 25%);
+  background-image: linear-gradient(to top, var(--colorpalette5) 1%, transparent 25%);
 }
 
 .section_photo:before {
-  background-image: linear-gradient(to bottom, var(--colorwhite) 1%, transparent 25%);
+  background-image: linear-gradient(to bottom, var(--colorpalette5) 1%, transparent 25%);
 }
 
 .section_photo:after {
@@ -409,9 +412,9 @@ p {
 }
 
 .button_general {
-  background: var(--colorpalette4);
+  background: var(--colorpalette1);
   border-radius: 0.75rem;
-  color: #2F5249; 
+  color: var(--colorpalette3); 
   font-size: clamp(1rem, 3vw, 2rem);
   padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1rem, 3vw, 2rem);
 }
@@ -455,15 +458,16 @@ p {
 .hero_names {
   font-size: clamp(4rem, 10vw, 8rem);
 
-  color: transparent;
-  -webkit-text-stroke: 1px var(--colorwhite);
+  color: var(--colorpalette4);
+  letter-spacing: .5rem;
+  /* -webkit-text-stroke: 1px var(--colorblack); */
 
-  background: linear-gradient(90deg, rgb(var(--colorwhitergb) / .3), rgb(var(--colorwhitergb) / .5), rgb(var(--colorwhitergb) / .3));
+  /* background: linear-gradient(90deg, rgb(var(--colorblackrgb) / .3), rgb(var(--colorwhitergb) / .5), rgb(var(--colorwhitergb) / .3));
   background-size: 80%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 
-  -webkit-background-clip: text;
-  background-clip: text;
+  /* -webkit-background-clip: text;
+  background-clip: text; */
 
   animation: shine 2.5s linear infinite;
 }
@@ -563,9 +567,9 @@ p {
 }
 
 .counter_container {
-  background: #778873;
-  border-radius: 32px;
-  padding: clamp(1rem, 3vw, 2rem);
+  border: 2px solid var(--colorpalette4);
+  border-radius: 1rem;
+  /* padding: clamp(1rem, 3vw, 2rem); */
 }
 
 .photo_section_card_blur {
@@ -644,7 +648,7 @@ p {
 
 .card_title_deco {
   display: inline-block;
-  background: #778873;
+  background: var(--colorpalette3);
   padding: 0 8px;
 }
 
