@@ -175,13 +175,9 @@ export default function IsaiLupita () {
                         zIndex: 1,
                         }}
                         ></div>
-                        <img src={imgFlores} alt="" className="w-100 position-absolute z-1"
-                            style={{
-                                top: 0,
-                                left: "50%",
-                                transform: "translateX(-50%)"
-                            }} 
-                        />
+                        <div className="hero_img_flowers_container position-absolute z-1">
+                            <img src={imgFlores} alt="" className="w-100"/>
+                        </div>                        
                         <motion.img
                             src={imgPrincipal}
                             className="hero_bg_img"
@@ -248,9 +244,9 @@ export default function IsaiLupita () {
                             }}
                             className="section_general_title_container pb-0"
                         >
-                            <h3 className="section_title_green text-center font_great_vibes text-white mb-0" 
+                            <h3 className="section_title_color_p3 text-center font_great_vibes mb-0" 
                                 style={{
-                                    background: "var(--colorpalette2)",
+                                    background: "var(--colorpalette3)",
                                     padding: "1rem"
                                 }}
                             >Save the date</h3>
@@ -358,9 +354,9 @@ export default function IsaiLupita () {
                             className="section_general_title_container position-relative pb-0"
                         >
                             <h3 
-                                className="section_title_green text-center font_great_vibes text-white mb-0"
+                                className="section_title_color_p3 text-center font_great_vibes mb-0"
                                 style={{
-                                    background: "var(--colorpalette2)",
+                                    background: "var(--colorpalette3)",
                                     padding: "1rem"
                                 }}
                             >Ceremonia civil</h3>
@@ -395,9 +391,9 @@ export default function IsaiLupita () {
                             className="section_general_title_container pb-0"
                         >
                             <h3 
-                                className="section_title_green text-center font_great_vibes text-white mb-0"
+                                className="section_title_color_p3 text-center font_great_vibes mb-0"
                                 style={{
-                                    background: "var(--colorpalette2)",
+                                    background: "var(--colorpalette3)",
                                     padding: "1rem"
                                 }}
                             >Código de vestimenta</h3>

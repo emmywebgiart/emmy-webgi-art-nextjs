@@ -527,7 +527,8 @@ p {
 
 .section_decoration_title_container .section_title,
 .section_title_green,
-.section_title_yellow {
+.section_title_yellow,
+.section_title_color_p3 {
   font-size: clamp(2.5rem, 6.5vw, 5rem);
 }
 
@@ -537,6 +538,10 @@ p {
 
 .section_title_yellow {
   color: var(--colorpalette4);
+}
+
+.section_title_color_p3 {
+  color: var(--colorpalette1);
 }
 
 .subtitle_deco_container {
@@ -603,11 +608,19 @@ p {
   border-bottom-right-radius: 16px;
 }
 
-.flowers_separator_container {
-  bottom: -56px;
+.flowers_separator_container,
+.hero_img_flowers_container {
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 32px);
+}
+
+.flowers_separator_container {
+  bottom: -56px;
+}
+
+.hero_img_flowers_container {
+  top: 1rem;
 }
 
 .flowers_separator_container img {
@@ -867,7 +880,8 @@ p {
   .hero_content {
     gap: 1rem;
   }
-  .flowers_separator_container {
+  .flowers_separator_container,
+  .hero_img_flowers_container {
     width: 575px;
   }
 }
