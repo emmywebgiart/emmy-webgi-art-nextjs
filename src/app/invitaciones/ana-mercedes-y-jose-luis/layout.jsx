@@ -1,15 +1,15 @@
 export const metadata = {
   title: "Ana Mercedes y José Luis | Nuestra Boda",
-  description: "Acompáñanos a celebrar nuestro matrimonio.",
+  description: "Con inmensa alegría en nuestros corazones, queremos compartir contigo el inicio de una nueva etapa y celebrar juntos este día tan especial.",
 
   openGraph: {
     title: "Ana Mercedes y José Luis | Nuestra Boda",
-    description: "Acompáñanos a celebrar nuestro matrimonio.",
-    url: "https://tu-dominio.vercel.app/invitaciones/anamercedesyjoseluis",
+    description: "Con inmensa alegría en nuestros corazones, queremos compartir contigo el inicio de una nueva etapa y celebrar juntos este día tan especial.",
+    url: "https://emmywebgiart.vercel.app/invitaciones/anamercedesyjoseluis",
     siteName: "Invitación de Boda",
     images: [
       {
-        url: "https://emmy-webgi-art-nextjs.vercel.app/img/invitaciones/anamercedesyjoseluis/anamercedesyjoseluislink.jpg",
+        url: "https://emmywebgiart.vercel.app/img/invitaciones/anamercedesyjoseluis/anamercedesyjoseluislink.jpg",
         width: 1200,
         height: 630,
         alt: "Ana Mercedes y José Luis",
@@ -22,9 +22,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ana Mercedes y José Luis | Nos Casamos",
-    description: "Acompáñanos a celebrar nuestro matrimonio.",
+    description: "Con inmensa alegría en nuestros corazones, queremos compartir contigo el inicio de una nueva etapa y celebrar juntos este día tan especial.",
     images: [
-      "https://emmy-webgi-art-nextjs.vercel.app/img/invitaciones/anamercedesyjoseluis/anamercedesyjoseluislink.jpg",
+      "https://emmywebgiart.vercel.app/img/invitaciones/anamercedesyjoseluis/anamercedesyjoseluislink.jpg",
     ],
   },
 };
