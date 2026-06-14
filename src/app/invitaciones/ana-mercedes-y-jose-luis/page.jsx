@@ -11,6 +11,7 @@ import 'swiper/css/autoplay';
 
 const imgPrincipal = "/img/invitaciones/anamercedesyjoseluis/pareja1.jpeg"
 const imgFlores = "/img/invitaciones/anamercedesyjoseluis/flores2.png"
+const imgFloresTitle = "/img/invitaciones/anamercedesyjoseluis/flor_title.png"
 const img2 = "/img/invitaciones/anamercedesyjoseluis/pareja2.jpeg"
 const img3 = "/img/invitaciones/anamercedesyjoseluis/pareja3.jpeg"
 const img4 = "/img/invitaciones/anamercedesyjoseluis/pareja4.jpeg"
@@ -245,14 +246,27 @@ export default function IsaiLupita () {
                             }}
                             className="section_general_title_container pb-0"
                         >
-                            <h3 className="section_title_color_p3 text-center font_great_vibes mb-0" 
-                                style={{
-                                    background: "var(--colorpalette3)",
-                                    padding: "1rem"
-                                }}
-                            >Save the date</h3>
+                            <div className="position-relative">
+                                <h3 className="section_title_color_p3 text-center font_great_vibes mb-0" 
+                                    style={{
+                                        background: "rgb(235 229 194 / 50%)",
+                                        padding: "1rem",
+                                        backdropFilter: "blur(5px)"
+                                    }}
+                                >Save the date</h3>
+                                <img src={imgFloresTitle}
+                                    style={{
+                                        position: "absolute",
+                                        top: "50%",
+                                        left: "50%",
+                                        width: "220px",
+                                        transform: "translate(-50%, -50%)",
+                                        zIndex: "-1"
+                                    }}
+                                />
+                            </div>                           
                         </motion.div>
-                        <div className="mt-3">
+                        <div className="mt-5">
                             <p className="text-center">Con mucha ilusión y felicidad, te invitamos a acompañarnos en nuestra ceremonia civil, donde uniremos nuestras vidas y celebraremos el comienzo de una nueva historia juntos.</p>
                         </div>
                         <div className="d-flex flex-column gap_2">
@@ -354,15 +368,26 @@ export default function IsaiLupita () {
                             }}
                             className="section_general_title_container position-relative pb-0"
                         >
-                            <h3 
-                                className="section_title_color_p3 text-center font_great_vibes mb-0"
-                                style={{
-                                    background: "var(--colorpalette3)",
-                                    padding: "1rem"
-                                }}
-                            >Ceremonia civil</h3>
+                            <div className="position-relative">
+                                <h3 className="section_title_color_p3 text-center font_great_vibes mb-0 position-relative z-1" 
+                                    style={{
+                                        background: "rgb(235 229 194 / 50%)",
+                                        padding: "1rem",
+                                        backdropFilter: "blur(5px)"
+                                    }}
+                                >Ceremonia civil</h3>
+                                <img src={imgFloresTitle}
+                                    style={{
+                                        position: "absolute",
+                                        top: "50%",
+                                        left: "50%",
+                                        width: "220px",
+                                        transform: "translate(-50%, -50%)",
+                                    }}
+                                />
+                            </div>
                         </motion.div>
-                        <section className="position-relative text-center mt-3">
+                        <section className="position-relative text-center mt-5">
                             <article>
                                 <p className="mb-0">Centro de Espectáculos</p>
                                 <p className="fw-bolder fs_4" translate="no">"Luxon"</p>
@@ -391,15 +416,26 @@ export default function IsaiLupita () {
                             }}
                             className="section_general_title_container pb-0"
                         >
-                            <h3 
-                                className="section_title_color_p3 text-center font_great_vibes mb-0"
-                                style={{
-                                    background: "var(--colorpalette5)",
-                                    padding: "1rem"
-                                }}
-                            >Código de vestimenta</h3>
+                            <div className="position-relative">
+                                <h3 className="section_title_color_p3 text-center font_great_vibes mb-0 position-relative z-1" 
+                                    style={{
+                                        background: "rgb(255 255 255 / 50%)",
+                                        padding: "1rem",
+                                        backdropFilter: "blur(5px)"
+                                    }}
+                                >Código de vestimenta</h3>
+                                <img src={imgFloresTitle}
+                                    style={{
+                                        position: "absolute",
+                                        top: "50%",
+                                        left: "50%",
+                                        width: "220px",
+                                        transform: "translate(-50%, -50%)",
+                                    }}
+                                />
+                            </div>
                         </motion.div>
-                        <div className="mt-3">
+                        <div className="mt-5">
                             <p className="text-center">Formal y elegante</p>
                         </div>
                         <div className="d-flex flex-column gap_3">
@@ -435,15 +471,26 @@ export default function IsaiLupita () {
                             }}
                             className="section_general_title_container pb-0"
                         >
-                            <h3 
-                                className="section_title_color_p3 text-center font_great_vibes mb-0"
-                                style={{
-                                    background: "var(--colorpalette3)",
-                                    padding: "1rem"
-                                }}
-                            >Mesa de Regalos</h3>
+                            <div className="position-relative">
+                                <h3 className="section_title_color_p3 text-center font_great_vibes mb-0 position-relative z-1" 
+                                    style={{
+                                        background: "rgb(235 229 194 / 50%)",
+                                        padding: "1rem",
+                                        backdropFilter: "blur(5px)"
+                                    }}
+                                >Regalos</h3>
+                                <img src={imgFloresTitle}
+                                    style={{
+                                        position: "absolute",
+                                        top: "50%",
+                                        left: "50%",
+                                        width: "220px",
+                                        transform: "translate(-50%, -50%)",
+                                    }}
+                                />
+                            </div>
                         </motion.div>
-                        <div className="d-flex flex-column gap_3 mt-3">
+                        <div className="d-flex flex-column gap_3 mt-5">
                             <section className="d-flex flex-column gap_4">
                                 <article>
                                     <div className="d-flex justify-content-center align-items-center" style={{border: "2px solid var(--colorpalette4)", borderRadius: "12px"}}>

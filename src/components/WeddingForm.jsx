@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
+const imgFloresTitle = "/img/invitaciones/anamercedesyjoseluis/flor_title.png"
+
 function WeddingForm() {
   const [fullName, setFullName] = useState("")
   const [confirmation, setConfirmation] = useState("")
@@ -103,17 +105,27 @@ function WeddingForm() {
         }}
         className="section_general_title_container"
       >
-        <h3 className="section_title_color_p3 text-center font_great_vibes mb-0"
-          style={{
-            background: "var(--colorpalette5)",
-            padding: "1rem"
-          }}
-        >
-          Confirma tu asistencia
-        </h3>
+        <div className="position-relative">
+            <h3 className="section_title_color_p3 text-center font_great_vibes mb-0 position-relative z-1" 
+                style={{
+                    background: "rgb(255 255 255 / 50%)",
+                    padding: "1rem",
+                    backdropFilter: "blur(5px)"
+                }}
+            >Confirma tu asistencia</h3>
+            <img src={imgFloresTitle}
+                style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    width: "220px",
+                    transform: "translate(-50%, -50%)",
+                }}
+            />
+        </div>
       </motion.div>
 
-      <form onSubmit={handleSubmit} className="card_border border_p3 mt-3">
+      <form onSubmit={handleSubmit} className="card_border border_p3 mt-5">
         <div className="card_body">
           <div className="d-flex flex-column gap_3">
             <div className="d-flex flex-column">
