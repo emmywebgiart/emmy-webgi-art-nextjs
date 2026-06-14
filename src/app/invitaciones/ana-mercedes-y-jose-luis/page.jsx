@@ -198,7 +198,7 @@ export default function IsaiLupita () {
                                 transition={{ duration: 1.2, ease: "easeOut", delay: 0.6 }}
                                 className="text-center position-relative z-2"             
                             >
-                                <h2 className="hero_names font_lustria fs_4 text-uppercase fw-bolder mb-0" style={{background: "rgb(250 243 225 / 50%)"}}>
+                                <h2 className="hero_names font_lustria fs_4 text-uppercase fw-bolder mb-0" style={{background: "rgb(250 243 225 / 50%)", backdropFilter: "blur(10px)"}}>
                                     <span className="card_body">
                                         <span className="d-flex flex-column flex-lg-row gap-2 justify-content-center">  
                                             <span>Ana Mercedes</span>
@@ -402,14 +402,14 @@ export default function IsaiLupita () {
                             <p className="text-center">Formal y elegante</p>
                         </div>
                         <div className="d-flex flex-column gap_3">
-                            <section className="d-flex justify-content-center gap_4">
+                            <section className="d-flex flex-column gap_4">
                                 <article>
-                                    <div className="d-flex justify-content-center align-items-center" style={{border: "2px solid var(--colorpalette4)", borderRadius: "12px", height: "clamp(8rem, 22vw, 16rem)", width: "clamp(8rem, 22vw, 16rem)"}}>
+                                    <div className="d-flex justify-content-center align-items-center" style={{border: "2px solid var(--colorpalette4)", borderRadius: "12px"}}>
                                         <img src={vestido2} alt="" className="dress_code_img"/>
                                     </div>
                                 </article>
                                 <article>
-                                    <div className="d-flex justify-content-center align-items-center" style={{border: "2px solid var(--colorpalette4)", borderRadius: "12px", height: "clamp(8rem, 22vw, 16rem)", width: "clamp(8rem, 22vw, 16rem)"}}>
+                                    <div className="d-flex justify-content-center align-items-center" style={{border: "2px solid var(--colorpalette4)", borderRadius: "12px"}}>
                                         <img src={traje} alt="" className="dress_code_img" />
                                     </div>
                                 </article>
