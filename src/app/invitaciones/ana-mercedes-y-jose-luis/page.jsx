@@ -18,6 +18,7 @@ const vestido2 = "/img/invitaciones/anamercedesyjoseluis/dresscode_vestido.png"
 const traje = "/img/invitaciones/anamercedesyjoseluis/dresscode_traje.png"
 const regalo = "/img/invitaciones/anamercedesyjoseluis/regalo.png"
 const sello = "/img/invitaciones/anamercedesyjoseluis/sellolacre.png"
+const imgRegalos = "/img/invitaciones/anamercedesyjoseluis/mesa_regalos.png"
 
 const audio = "/audio/napoleoneres.mp3"
 
@@ -419,62 +420,42 @@ export default function IsaiLupita () {
                             </div> 
                         </div>                       
                     </section>
-                    <section className="section_decoration position-relative">
-                        <div className="card_border border_p4">
-                            <div className="card_body_pb_deco">
-                                <div className="section_decoration_title_container text-center">
-                                    <div className="card_title_deco position-relative">
-                                        <motion.h3 
-                                            initial={{ opacity: 0, scale: 0.88, y: 12 }}
-                                            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                                            viewport={{
-                                                once: true,
-                                                amount: 0.5
-                                            }}
-                                            transition={{
-                                                duration: 0.7,
-                                                delay: 0.25,
-                                                ease: [0.22, 1, 0.36, 1]
-                                            }}
-                                            className="section_title font_great_vibes color_p4 mb-0"
-                                        >
-                                            Mesa de Regalos
-                                        </motion.h3>
+                    <section className="section">
+                        <motion.div 
+                            initial={{ opacity: 0, scale: 0.88, y: 12 }}
+                            whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                            viewport={{
+                                once: true,
+                                amount: 0.5
+                            }}
+                            transition={{
+                                duration: 0.7,
+                                delay: 0.25,
+                                ease: [0.22, 1, 0.36, 1]
+                            }}
+                            className="section_general_title_container pb-0"
+                        >
+                            <h3 
+                                className="section_title_color_p3 text-center font_great_vibes mb-0"
+                                style={{
+                                    background: "var(--colorpalette3)",
+                                    padding: "1rem"
+                                }}
+                            >Mesa de Regalos</h3>
+                        </motion.div>
+                        <div className="d-flex flex-column gap_3 mt-3">
+                            <section className="d-flex flex-column gap_4">
+                                <article>
+                                    <div className="d-flex justify-content-center align-items-center" style={{border: "2px solid var(--colorpalette4)", borderRadius: "12px"}}>
+                                        <img src={imgRegalos} alt="" className="dress_code_img"/>
                                     </div>
-                                </div>
-                                <div className="text-center position-relative">
-                                    <div className="card_body">
-                                        <p className="position-relative z-1">Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle con nosotros,
+                                </article>
+                            </section>
+                            <div className="text-center">
+                                <p className="mb-0">Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle con nosotros,
             hemos preparado una mesa de regalos para tu comodidad.</p>
-                                    </div>
-                                    <div className="position-absolute" style={{top: "50%", left: "50%", transform: "translate(-50%, -50%)", zIndex: "0"}}>
-                                        <img src={regalo} alt="Decoración regalo" className="img_gift opacity-25" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div className="flowers_separator_container position-absolute">
-                            <motion.img
-                                src={imgFlores}
-                                alt="Separador flores"
-                                className="img-fluid float_animation"
-                                initial={{
-                                    opacity: 0,
-                                    y: 60,
-                                    scale: 0.95,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    scale: 1,
-                                }}
-                                viewport={{ once: true, amount: 0.3 }}
-                                transition={{
-                                    duration: 1,
-                                    ease: [0.22, 1, 0.36, 1],
-                                }}
-                            />
-                        </div>      
+                            </div> 
+                        </div>                       
                     </section>
                     <section className="section">
                         <WeddingForm />
