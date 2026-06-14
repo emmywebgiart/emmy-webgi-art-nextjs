@@ -105,7 +105,7 @@ function WeddingForm() {
       >
         <h3 className="section_title_color_p3 text-center font_great_vibes mb-0"
           style={{
-            background: "var(--colorpalette3)",
+            background: "var(--colorpalette5)",
             padding: "1rem"
           }}
         >

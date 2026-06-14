@@ -376,7 +376,7 @@ export default function IsaiLupita () {
                             <a href="https://www.google.com/maps/place/Centro+de+Espect%C3%A1culos+Luxon/@19.793568,-99.8659869,17z/data=!3m1!4b1!4m6!3m5!1s0x85d258dd0cf7184f:0xce7509adaac0b156!8m2!3d19.793568!4d-99.8659869!16s%2Fg%2F11b6jk03dx?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="button_general">Ver ubicación en Google Maps</a>
                         </div>
                     </section>                   
-                    <section className="section">
+                    <section className="section" style={{background: "#F2E2B1"}}>
                         <motion.div 
                             initial={{ opacity: 0, scale: 0.88, y: 12 }}
                             whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -394,7 +394,7 @@ export default function IsaiLupita () {
                             <h3 
                                 className="section_title_color_p3 text-center font_great_vibes mb-0"
                                 style={{
-                                    background: "var(--colorpalette3)",
+                                    background: "var(--colorpalette5)",
                                     padding: "1rem"
                                 }}
                             >Código de vestimenta</h3>
@@ -457,7 +457,7 @@ export default function IsaiLupita () {
                             </div> 
                         </div>                       
                     </section>
-                    <section className="section">
+                    <section className="section" style={{background: "#F2E2B1"}}>
                         <WeddingForm />
                     </section>
                 </>
