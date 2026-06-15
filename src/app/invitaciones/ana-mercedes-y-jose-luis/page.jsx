@@ -17,7 +17,7 @@ const img3 = "/img/invitaciones/anamercedesyjoseluis/pareja3.webp"
 const img4 = "/img/invitaciones/anamercedesyjoseluis/pareja4.webp"
 const vestido2 = "/img/invitaciones/anamercedesyjoseluis/dresscode_vestido.webp"
 const traje = "/img/invitaciones/anamercedesyjoseluis/dresscode_traje.webp"
-const sello = "/img/invitaciones/anamercedesyjoseluis/sellolacre.png"
+const sello = "/img/invitaciones/anamercedesyjoseluis/sellolacre.webp"
 const imgRegalos = "/img/invitaciones/anamercedesyjoseluis/mesa_regalos.webp"
 const imgSalon = "/img/invitaciones/anamercedesyjoseluis/centroespectaculosluxon.webp"
 
@@ -518,8 +518,7 @@ export default function IsaiLupita () {
                                 </article>
                             </section>
                             <div className="text-center">
-                                <p className="mb-0">Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle con nosotros,
-            hemos preparado una mesa de regalos para tu comodidad.</p>
+                                <p className="mb-0">Tu compañía en este día tan especial es el regalo más significativo que podemos recibir. Si gustas tener un detalle adicional, será recibido con profunda gratitud.</p>
                             </div> 
                         </div>                       
                     </section>

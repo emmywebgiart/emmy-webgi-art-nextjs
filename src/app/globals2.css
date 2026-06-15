@@ -122,6 +122,7 @@ code {
   --colorwhitergb: 255 255 255;
   --colorpallete2rgb: 67 112 87;
   --colorpallete3rgb: 119 136 115;
+  --colorpallete4rgb: 65 100 74;
 }
 
 body {
@@ -145,18 +146,6 @@ a {
 
 p {
   font-size: clamp(1rem, 3vw, 2rem);
-}
-
-.color_p1 {
-  color: var(--colorpalette1);
-}
-
-.color_p4 {
-  color: var(--colorpalette4);
-}
-
-.bg_p5 {
-  background: var(--colorpalette5);
 }
 
 .grid_center {
@@ -835,8 +824,7 @@ p {
 
 .confirm_card {
   border-radius: 14px;
-  border: 2px solid rgb(var(--colorpallete3rgb) / 30%);
-  background: var(--colorwhite);
+  /* border: 2px solid rgb(var(--colorpallete4rgb) / 30%); */
   cursor: pointer;
   transition: all 0.25s ease;
   overflow: hidden;
@@ -862,15 +850,15 @@ p {
   left: 50%;
   width: clamp(1rem, 3vw, 2rem);
   height: clamp(1rem, 3vw, 2rem);
-  background: var(--colorpalette3);
+  background: var(--colorpalette4);
   border-radius: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.25s ease;
 }
 
 .confirm_card.active {
-  border-color: var(--colorpalette3);
-  background: rgb(var(--colorpallete3rgb) / 15%);
+  /* border-color: var(--colorpalette4); */
+  background: #f2e2b1;
   transform: scale(1.03);
 }
 
@@ -888,6 +876,22 @@ p {
 
 .z_4 {
   z-index: 4;
+}
+
+.color_p1 {
+  color: var(--colorpalette1);
+}
+
+.color_p4 {
+  color: var(--colorpalette4);
+}
+
+.bg_p5 {
+  background: var(--colorpalette5);
+}
+
+.bg_white {
+  background: var(--colorwhite);
 }
 
 @media (min-width: 768px) {

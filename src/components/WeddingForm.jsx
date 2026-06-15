@@ -130,16 +130,16 @@ function WeddingForm() {
           <div className="d-flex flex-column gap_3">
             <div className="d-flex flex-column">
               <label htmlFor="name" className="mb_1 fs_6">
-                Nombre completo
+                Nombre completo o familia
               </label>
               <input
                 id="name"
-                className="form_input"
+                className="form_input bg_white"
                 type="text"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 autoComplete="off"
-                placeholder="Ingresa tu nombre completo"
+                placeholder="Ingresa tu nombre o apellido de familia"
               />
               {errors.fullName && (
                 <small className="text-danger">{errors.fullName}</small>
@@ -151,7 +151,7 @@ function WeddingForm() {
               <div className="row">
                 <div className="col-6">
                   <label
-                    className={`confirm_card d-flex justify-content-center align-items-center flex-column gap_2 ${
+                    className={`confirm_card bg_white d-flex justify-content-center align-items-center flex-column gap_2 ${
                       confirmation === "Sí" ? "active" : ""
                     }`}
                   >
@@ -169,7 +169,7 @@ function WeddingForm() {
 
                 <div className="col-6">
                   <label
-                    className={`confirm_card d-flex justify-content-center align-items-center flex-column gap_2 ${
+                    className={`confirm_card bg_white d-flex justify-content-center align-items-center flex-column gap_2 ${
                       confirmation === "No" ? "active" : ""
                     }`}
                   >
@@ -192,14 +192,14 @@ function WeddingForm() {
 
             <div className="d-flex flex-column">
               <label htmlFor="message" className="mb_1 fs_6">
-                Mensaje para los novios
+                Dedicatoria para los novios
               </label>
               <textarea
                 id="message"
-                className="form_input"
+                className="form_input bg_white"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Ingresa un mensaje para los novios"
+                placeholder="Escribe un mensaje con cariño para los novios..."
               />
               {errors.message && (
                 <small className="text-danger">{errors.message}</small>
