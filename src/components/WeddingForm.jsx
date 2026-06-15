@@ -125,7 +125,7 @@ function WeddingForm() {
         </div>
       </motion.div>
 
-      <form onSubmit={handleSubmit} className="card_border border_p3 mt-5">
+      <form onSubmit={handleSubmit} className="card_general bg_p5 mt-5">
         <div className="card_body">
           <div className="d-flex flex-column gap_3">
             <div className="d-flex flex-column">

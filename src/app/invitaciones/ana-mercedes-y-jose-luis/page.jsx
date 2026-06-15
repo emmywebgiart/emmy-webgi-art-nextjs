@@ -284,12 +284,12 @@ export default function IsaiLupita () {
                         <div className="mt-5">
                             <p className="text-center">Con mucha ilusión y felicidad, te invitamos a acompañarnos en nuestra ceremonia civil, donde uniremos nuestras vidas y celebraremos el comienzo de una nueva historia juntos.</p>
                         </div>
-                        <div className="d-flex flex-column gap_2">
+                        <div className="d-flex flex-column gap_3">
                             <div className="d-flex justify-content-between align-items-center">
                                 <p className="mb-0 text-uppercase">Agosto</p>
                                 <div className="text-center">
                                     <p className="fs_4 text-uppercase">Sábado</p>
-                                    <p className="date_day fw-bolder">8</p>
+                                    <p className="date_day fw-bolder mb-0">8</p>
                                 </div>
                                 <p className="fs_4 mb-0">2026</p>
                             </div>
@@ -404,13 +404,12 @@ export default function IsaiLupita () {
                         </motion.div>
                         <section className="position-relative text-center mt-5 d-flex flex-column gap_3">
                             <article>
+                                <p className="mb-0">Centro de Espectáculos <span className="fw-bolder">"Luxon"</span></p>
+                            </article>
+                            <article>
                                 <div className="overflow-hidden rounded-4">
                                     <img src={imgSalon} alt="" className="w-100" />
                                 </div>
-                            </article>
-                            <article>
-                                <p className="mb-0">Centro de Espectáculos</p>
-                                <p className="fw-bolder fs_4 mb-0" translate="no">"Luxon"</p>
                             </article>
                             <article>
                                 <p className="mb-0">Atlacomulco de Fabela, Estado de México</p>
