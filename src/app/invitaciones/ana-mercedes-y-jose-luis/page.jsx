@@ -95,10 +95,10 @@ export default function IsaiLupita () {
 
         setTimeout(() => {
             setOverlayVisible(false)
-            setIsPlaying(true)
-            const audio = audioRef.current
-            audio.muted = false
-            audio.play().catch((err) => console.log("No se pudo reproducir audio:", err))
+            // setIsPlaying(true)
+            // const audio = audioRef.current
+            // audio.muted = false
+            // audio.play().catch((err) => console.log("No se pudo reproducir audio:", err))
         }, 1300)
     };
 
@@ -126,28 +126,43 @@ export default function IsaiLupita () {
         <main>
             {/* <audio ref={audioRef} src={audio} loop hidden /> */}
 
-            {!overlayVisible && (
+            {overlayVisible && (
                 <div className="full_screen bg_p3 grid_center">
                     <div
                         ref={containerRef}
-                        className={`invitation_container d-flex justify-content-center align-items-center ${isContainerOpen ? 'open' : ''}`}
+                        className={`invitation_container invitation_container_border d-flex justify-content-center align-items-center ${isContainerOpen ? 'open' : ''}`}
                     >
                         <div
                             ref={innerBgRef}
-                            className={`inner_background ${isInnerOpen ? 'open' : ''}`}
+                            className={`inner_background inner_background_border ${isInnerOpen ? 'open' : ''}`}
                         ></div>
-                        <div className="position-relative text-center z-2">
-                            <h2 className="invitation_title font_great_vibes color_p4">Ana Mercedes y José Luis</h2>
-                            <p className="text-white">Haz clic para abrir tu invitación</p>
-                            <button className="button_invitation" onClick={abrirInvitacion}>
-                                <img src={sello} alt="Sello Isai y Lupita" className="img_invitation_seal" />
-                            </button>
+                        <div className="position-relative text-center z-2 w-100 h-100 d-flex flex-column p-4">
+                            <h2 className="font_lustria mb-0 text-uppercase fs_6 color_p1">Nuestra Boda</h2>
+                            <div className="flex-grow-1 d-flex flex-column align-items-center justify-content-center">
+                                <div className="d-flex flex-column gap_3">
+                                    <h2 className="invitation_title font_lustria color_p4 text-uppercase fs-1">
+                                        <span className="d-flex flex-column gap-2">
+                                            <span>Ana Mercedes</span>
+                                            <span>y</span>
+                                            <span>José Luis</span>
+                                        </span>
+                                    </h2>
+                                    <h3 className="font_lustria mb-0 text-uppercase fs_6 color_p1">8 Agosto de 2026</h3>
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <p>Haz clic para abrir tu invitación</p>
+                                <button className="button_invitation" onClick={abrirInvitacion}>
+                                    <img src={sello} alt="Sello Isai y Lupita" className="img_invitation_seal" />
+                                </button>
+                            </div>                           
                         </div>
                     </div>
                 </div>
             )}
 
-            {overlayVisible && (
+            {!overlayVisible && (
                 <>
                     {/* <button className="sound_button z_4 grid-center" onClick={toggleAudio}>
                         <div className={`sound_equalizer ${isPlaying ? "playing" : ""}`}>

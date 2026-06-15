@@ -125,7 +125,7 @@ code {
 }
 
 body {
-    background: var(--colorpalette5);
+  background: var(--colorpalette5);
   font-family: "Lustria", serif;
   color: var(--colorpalette2);
 }
@@ -215,6 +215,11 @@ p {
   padding: 1rem;
 }
 
+.invitation_container_border {
+  border: 2px solid var(--colorpalette4);
+  border-radius: 0;
+}
+
 .invitation_container::before,
 .invitation_container::after {
   content: '';
@@ -252,6 +257,11 @@ p {
   border-radius: 32px;
   overflow: hidden;
   z-index: 2;
+}
+
+.inner_background_border {
+  border-radius: 0px;
+  border: 2px solid var(--colorpalette4);
 }
 
 .inner_background::before,
