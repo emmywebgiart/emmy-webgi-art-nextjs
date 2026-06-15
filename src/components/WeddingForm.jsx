@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
-const imgFloresTitle = "/img/invitaciones/anamercedesyjoseluis/flor_title.png"
+const imgFloresTitle = "/img/invitaciones/anamercedesyjoseluis/flor_title.webp"
 
 function WeddingForm() {
   const [fullName, setFullName] = useState("")

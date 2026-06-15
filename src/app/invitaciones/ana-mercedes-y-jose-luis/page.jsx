@@ -9,17 +9,17 @@ import WeddingForm from "@/components/WeddingForm";
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-const imgPrincipal = "/img/invitaciones/anamercedesyjoseluis/pareja1.jpeg"
-const imgFlores = "/img/invitaciones/anamercedesyjoseluis/flores2.png"
-const imgFloresTitle = "/img/invitaciones/anamercedesyjoseluis/flor_title.png"
-const img2 = "/img/invitaciones/anamercedesyjoseluis/pareja2.jpeg"
-const img3 = "/img/invitaciones/anamercedesyjoseluis/pareja3.jpeg"
-const img4 = "/img/invitaciones/anamercedesyjoseluis/pareja4.jpeg"
-const vestido2 = "/img/invitaciones/anamercedesyjoseluis/dresscode_vestido.png"
-const traje = "/img/invitaciones/anamercedesyjoseluis/dresscode_traje.png"
-const regalo = "/img/invitaciones/anamercedesyjoseluis/regalo.png"
+const imgPrincipal = "/img/invitaciones/anamercedesyjoseluis/pareja1.webp"
+const imgFlores = "/img/invitaciones/anamercedesyjoseluis/flores2.webp"
+const imgFloresTitle = "/img/invitaciones/anamercedesyjoseluis/flor_title.webp"
+const img2 = "/img/invitaciones/anamercedesyjoseluis/pareja2.webp"
+const img3 = "/img/invitaciones/anamercedesyjoseluis/pareja3.webp"
+const img4 = "/img/invitaciones/anamercedesyjoseluis/pareja4.webp"
+const vestido2 = "/img/invitaciones/anamercedesyjoseluis/dresscode_vestido.webp"
+const traje = "/img/invitaciones/anamercedesyjoseluis/dresscode_traje.webp"
 const sello = "/img/invitaciones/anamercedesyjoseluis/sellolacre.png"
-const imgRegalos = "/img/invitaciones/anamercedesyjoseluis/mesa_regalos.png"
+const imgRegalos = "/img/invitaciones/anamercedesyjoseluis/mesa_regalos.webp"
+const imgSalon = "/img/invitaciones/anamercedesyjoseluis/centroespectaculosluxon.webp"
 
 const audio = "/audio/napoleoneres.mp3"
 
@@ -387,19 +387,24 @@ export default function IsaiLupita () {
                                 />
                             </div>
                         </motion.div>
-                        <section className="position-relative text-center mt-5">
+                        <section className="position-relative text-center mt-5 d-flex flex-column gap_3">
+                            <article>
+                                <div className="overflow-hidden rounded-4">
+                                    <img src={imgSalon} alt="" className="w-100" />
+                                </div>
+                            </article>
                             <article>
                                 <p className="mb-0">Centro de Espectáculos</p>
-                                <p className="fw-bolder fs_4" translate="no">"Luxon"</p>
+                                <p className="fw-bolder fs_4 mb-0" translate="no">"Luxon"</p>
                             </article>
                             <article>
                                 <p className="mb-0">Atlacomulco de Fabela, Estado de México</p>
-                                <p className="fw-bolder fs_4">16:00 HRS</p>
+                                <p className="fw-bolder fs_4 mb-0">16:00 HRS</p>
                             </article>
-                        </section>
-                        <div className="position-relative d-flex justify-content-center">
-                            <a href="https://www.google.com/maps/place/Centro+de+Espect%C3%A1culos+Luxon/@19.793568,-99.8659869,17z/data=!3m1!4b1!4m6!3m5!1s0x85d258dd0cf7184f:0xce7509adaac0b156!8m2!3d19.793568!4d-99.8659869!16s%2Fg%2F11b6jk03dx?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="button_general">Ver ubicación en Google Maps</a>
-                        </div>
+                            <div className="position-relative d-flex justify-content-center">
+                                <a href="https://www.google.com/maps/place/Centro+de+Espect%C3%A1culos+Luxon/@19.793568,-99.8659869,17z/data=!3m1!4b1!4m6!3m5!1s0x85d258dd0cf7184f:0xce7509adaac0b156!8m2!3d19.793568!4d-99.8659869!16s%2Fg%2F11b6jk03dx?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" className="button_general">Ver ubicación en Google Maps</a>
+                            </div>
+                        </section>                      
                     </section>                   
                     <section className="section" style={{background: "#F2E2B1"}}>
                         <motion.div 
