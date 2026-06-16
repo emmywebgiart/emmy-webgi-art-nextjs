@@ -228,7 +228,7 @@ function WeddingForm() {
             >
               ¡Qué alegría contar contigo!
             </p>
-            <p className="text-center font_lustria fs_4"><strong>{confirmedName}Galilea Zavala</strong></p>
+            <p className="text-center font_lustria fs_4"><strong>{confirmedName}</strong></p>
             <p className="text-center font_lustria fs_6">
               Estamos emocionados de compartir nuestra boda civil contigo. ¡Nos vemos en la celebración!
             </p>
