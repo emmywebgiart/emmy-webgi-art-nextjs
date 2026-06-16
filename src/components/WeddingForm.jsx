@@ -84,7 +84,7 @@ function WeddingForm() {
 
   useEffect(() => {
     if (confirmed) {
-      const timer = setTimeout(() => setConfirmed(false), 3000)
+      const timer = setTimeout(() => setConfirmed(false), 4000)
       return () => clearTimeout(timer)
     }
   }, [confirmed])
@@ -223,14 +223,14 @@ function WeddingForm() {
         <div className="full_screen bg_p3 d-flex align-items-center justify-content-center">
           <div className="card_body">
             <p
-              className="text-center font_great_vibes color_p4"
+              className="text-center font_great_vibes color_p1"
               style={{ fontSize: "clamp(2rem, 6vw, 4rem)" }}
             >
-              ¡Gracias por confirmar tu asistencia!
+              ¡Qué alegría contar contigo!
             </p>
-            <p className="text-white text-center font_lustria fs_4"><strong>{confirmedName}</strong></p>
-            <p className="text-white text-center font_lustria fs_6">
-              Nos alegra mucho que nos acompañes en este día tan especial.
+            <p className="text-center font_lustria fs_4"><strong>{confirmedName}Galilea Zavala</strong></p>
+            <p className="text-center font_lustria fs_6">
+              Estamos emocionados de compartir nuestra boda civil contigo. ¡Nos vemos en la celebración!
             </p>
           </div>
         </div>
