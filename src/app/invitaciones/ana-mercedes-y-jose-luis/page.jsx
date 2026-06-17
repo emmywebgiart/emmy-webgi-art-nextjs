@@ -10,11 +10,13 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 
 const imgPrincipal = "/img/invitaciones/anamercedesyjoseluis/pareja1.webp"
+const imgPrincipalSlide = "/img/invitaciones/anamercedesyjoseluis/pareja1.webp"
 const imgFlores = "/img/invitaciones/anamercedesyjoseluis/flores2.webp"
 const imgFloresTitle = "/img/invitaciones/anamercedesyjoseluis/flor_title.webp"
 const img2 = "/img/invitaciones/anamercedesyjoseluis/pareja2.webp"
 const img3 = "/img/invitaciones/anamercedesyjoseluis/pareja3.webp"
 const img4 = "/img/invitaciones/anamercedesyjoseluis/pareja4.webp"
+const img5 = "/img/invitaciones/anamercedesyjoseluis/pareja5.webp"
 const vestido2 = "/img/invitaciones/anamercedesyjoseluis/dresscode_vestido.webp"
 const traje = "/img/invitaciones/anamercedesyjoseluis/dresscode_traje.webp"
 const sello = "/img/invitaciones/anamercedesyjoseluis/sellolacre.webp"
@@ -175,7 +177,7 @@ export default function IsaiLupita () {
                     </button> */}
                     <motion.section 
                         className="section_hero overflow-hidden d-flex flex-column justify-content-end" 
-                        style={{backgroundImage: `url(${imgPrincipal})`, paddingBottom: "clamp(1rem, 3vw, 2rem)"}}
+                        style={{backgroundImage: `url(${img5})`, paddingBottom: "clamp(1rem, 3vw, 2rem)"}}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1.2 }}
@@ -192,15 +194,16 @@ export default function IsaiLupita () {
                         zIndex: 1,
                         }}
                         ></div>
-                        <div className="hero_img_flowers_container position-absolute z-1">
+                        {/* <div className="hero_img_flowers_container position-absolute z-1">
                             <img src={imgFlores} alt="" className="w-100"/>
-                        </div>                        
+                        </div>*/}
                         <motion.img
-                            src={imgPrincipal}
+                            src={img5}
                             className="hero_bg_img"
                             initial={{ scale: 1, opacity: 0 }}
                             animate={{ scale: 1.2, opacity: 1 }}
                             transition={{ duration: 2.5, ease: "easeOut" }}
+                            style={{objectFit: "contain"}}
                         />
                         <motion.div 
                             initial={{ opacity: 0 }}
@@ -215,7 +218,7 @@ export default function IsaiLupita () {
                                 transition={{ duration: 1.2, ease: "easeOut", delay: 0.6 }}
                                 className="text-center position-relative z-2"             
                             >
-                                <h2 className="hero_names font_lustria fs_4 text-uppercase fw-bolder mb-0" style={{background: "rgb(250 243 225 / 50%)", backdropFilter: "blur(10px)"}}>
+                                <h2 className="hero_names font_lustria fs_4 text-uppercase fw-bolder mb-0" style={{background: "rgb(250 243 225 / 70%)", backdropFilter: "blur(10px)"}}>
                                     <span className="card_body">
                                         <span className="d-flex flex-column flex-lg-row gap-2 justify-content-center">  
                                             <span>Ana Mercedes</span>
@@ -357,6 +360,9 @@ export default function IsaiLupita () {
                             onSlideChange={() => console.log('slide change')}
                         >
                             <SwiperSlide lazy="true">
+                                <img src={imgPrincipalSlide} alt="" className="w-100" loading="lazy" />
+                            </SwiperSlide>
+                            <SwiperSlide lazy="true">
                                 <img src={img2} alt="" className="w-100" loading="lazy" />
                             </SwiperSlide>
                             <SwiperSlide lazy="true">
@@ -383,7 +389,8 @@ export default function IsaiLupita () {
                             }}
                             className="section_general_title_container position-relative pb-0"
                         >
-                            <div className="position-relative">
+                            <p className="text-center fs_7">No camines delante de mí... yo podría no seguirte. No camines detrás de mí... tal vez no sepa guiarte, camina a mi lado y compartamos la experiencia de estar juntos.</p>
+                            <div className="position-relative" style={{marginTop: "5rem"}}>
                                 <h3 className="section_title_color_p3 text-center font_great_vibes mb-0 position-relative z-1" 
                                     style={{
                                         background: "rgb(235 229 194 / 50%)",
@@ -470,9 +477,6 @@ export default function IsaiLupita () {
                                     </div>
                                 </article>
                             </section>
-                            <div className="text-center">
-                                <p className="mb-0">Agradecemos tu presencia y te invitamos a acompañarnos con atuendo formal para celebrar este día tan especial.</p>
-                            </div> 
                         </div>                       
                     </section>
                     <section className="section">
@@ -518,7 +522,7 @@ export default function IsaiLupita () {
                                 </article>
                             </section>
                             <div className="text-center">
-                                <p className="mb-0">Tu compañía en este día tan especial es el regalo más significativo que podemos recibir. Si gustas tener un detalle adicional, será recibido con profunda gratitud.</p>
+                                <p className="mb-0">Tu compañía en este día tan especial es el regalo más significativo que podemos recibir. Cualquier detalle será recibido con profunda gratitud.</p>
                             </div> 
                         </div>                       
                     </section>

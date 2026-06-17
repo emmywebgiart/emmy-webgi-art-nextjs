@@ -373,7 +373,7 @@ p {
 }
 
 .section_hero:before {
-  background-image: linear-gradient(to bottom, var(--colorwhite), transparent 50%);
+  background-image: linear-gradient(to bottom, var(--colorwhite), transparent 20%);
 }
 
 .section_album:before {
@@ -702,6 +702,10 @@ p {
 
 .fs_6 {
   font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.fs_7 {
+  font-size: clamp(0.75rem, 2.25vw, 1.5rem);
 }
 
 .date_day {
