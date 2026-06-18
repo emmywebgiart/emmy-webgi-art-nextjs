@@ -157,7 +157,7 @@ function WeddingForm() {
             </div>
 
             <div className="confirmation_container d-flex flex-column">
-              <p className="mb_1 fs_6">Indica si la persona que asistiría es</p>
+              <p className="mb_1 fs_6">Indica si la persona que asistirá es</p>
               <div className="row">
                 <div className="col-6">
                   <label
