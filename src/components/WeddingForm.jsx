@@ -140,7 +140,7 @@ function WeddingForm() {
           <div className="d-flex flex-column gap_3">
             <div className="d-flex flex-column">
               <label htmlFor="name" className="mb_1 fs_6">
-                Nombre completo o familia
+                Nombre completo
               </label>
               <input
                 id="name"
@@ -149,7 +149,7 @@ function WeddingForm() {
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 autoComplete="off"
-                placeholder="Ingresa tu nombre o apellido de familia"
+                placeholder="Ingresa el nombre"
               />
               {errors.fullName && (
                 <small className="text-danger">{errors.fullName}</small>
@@ -157,7 +157,7 @@ function WeddingForm() {
             </div>
 
             <div className="confirmation_container d-flex flex-column">
-              <p className="mb_1 fs_6">El asistente es</p>
+              <p className="mb_1 fs_6">Indica si la persona que asistiría es</p>
               <div className="row">
                 <div className="col-6">
                   <label
