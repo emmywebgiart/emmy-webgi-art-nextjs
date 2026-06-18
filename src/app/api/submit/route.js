@@ -3,7 +3,7 @@ import { JWT } from "google-auth-library";
 
 export async function POST(req) {
   try {
-    const { fullName, confirmation, message } = await req.json();
+    const { fullName, attendeeType, confirmation, message } = await req.json();
 
     const serviceAccountAuth = new JWT({
       email: process.env.GOOGLE_CLIENT_EMAIL,
@@ -25,6 +25,7 @@ export async function POST(req) {
         timeZone: "America/Mexico_City",
       }),
       Name: fullName,
+      AttendeeType: attendeeType,
       Confirmation: confirmation,
       Message: message,
     });

@@ -7,6 +7,7 @@ const imgFloresTitle = "/img/invitaciones/anamercedesyjoseluis/flor_title.webp"
 
 function WeddingForm() {
   const [fullName, setFullName] = useState("")
+  const [attendeeType, setAttendeeType] = useState("")
   const [confirmation, setConfirmation] = useState("")
   const [message, setMessage] = useState("")
   const [confirmed, setConfirmed] = useState(false)
@@ -17,6 +18,7 @@ function WeddingForm() {
     fullName: "",
     message: "",
     confirmation: "",
+    attendeeType: "",
   })
 
   const handleSubmit = async (e) => {
@@ -29,11 +31,17 @@ function WeddingForm() {
       fullName: "",
       message: "",
       confirmation: "",
+      attendeeType: "",
     }
     let hasError = false
 
     if (!trimmedName) {
       newErrors.fullName = "Por favor ingresa tu nombre completo."
+      hasError = true
+    }
+
+    if (!attendeeType) {
+      newErrors.confirmation = "Por favor selecciona el tipo de asistente."
       hasError = true
     }
 
@@ -52,7 +60,7 @@ function WeddingForm() {
       return;
     }
 
-    setErrors({ fullName: "", message: "", confirmation: "" })
+    setErrors({ fullName: "", message: "", confirmation: "", attendeeType: "" })
     setIsLoading(true)
 
     try {
@@ -61,6 +69,7 @@ function WeddingForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           fullName: trimmedName,
+          attendeeType,
           confirmation,
           message: trimmedMessage,
         }),
@@ -73,6 +82,7 @@ function WeddingForm() {
         setConfirmed(true)
         setFullName("")
         setConfirmation("")
+        setAttendeeType("")
         setMessage("")
       }
     } catch (error) {
@@ -143,6 +153,50 @@ function WeddingForm() {
               />
               {errors.fullName && (
                 <small className="text-danger">{errors.fullName}</small>
+              )}
+            </div>
+
+            <div className="confirmation_container d-flex flex-column">
+              <p className="mb_1 fs_6">El asistente es</p>
+              <div className="row">
+                <div className="col-6">
+                  <label
+                    className={`confirm_card bg_white d-flex justify-content-center align-items-center flex-column gap_2 ${
+                      attendeeType === "Adulto" ? "active" : ""
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="confirmation"
+                      value="Adulto"
+                      checked={attendeeType === "Adulto"}
+                      onChange={(e) => setAttendeeType(e.target.value)}
+                    />
+                    <span className="radio_circle position-relative"></span>
+                    <p className="text-center fw-bold mb-0">Adulto</p>
+                  </label>
+                </div>
+
+                <div className="col-6">
+                  <label
+                    className={`confirm_card bg_white d-flex justify-content-center align-items-center flex-column gap_2 ${
+                      attendeeType === "Niño" ? "active" : ""
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="confirmation"
+                      value="Niño"
+                      checked={attendeeType === "Niño"}
+                      onChange={(e) => setAttendeeType(e.target.value)}
+                    />
+                    <span className="radio_circle position-relative"></span>
+                    <p className="text-center fw-bold mb-0">Niño</p>
+                  </label>
+                </div>
+              </div>
+              {errors.attendeeType && (
+                <small className="text-danger">{errors.attendeeType}</small>
               )}
             </div>
 
